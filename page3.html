@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>File Type And Size Validation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<div class="div">
+		<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UPLOAD YOUR FILE HERE</h1>
+		<form action="page4.html" name="myForm" method="post" onsubmit="return page3Validation()" ;>
+		<table>
+			<tr>
+				<td>
+					<fieldset><br><label>&nbsp;&nbsp;Recent Passport Size Photograph&nbsp;<font color="red" size="+2">*</font>
+                 </label><br><br>&nbsp;&nbsp;<input type="file" id="file1" onchange="return page3Validation('file1','size1');"><br>
+					<p id="size1"></p></fieldset><br>
+		 		 <fieldset><br><label>&nbsp;&nbsp;HSC Marksheet&nbsp;<font color="red" size="+2">*</font>
+                 </label><br><br>&nbsp;&nbsp;<input type="file" class"file" id="file2" onchange="return page3Validation('file2','size2');"><br>
+					<p id="size2"></p></fieldset><br>
+			     <fieldset><br><label>&nbsp;&nbsp;SSC Marksheet&nbsp;<font color="red" size="+2">*</font>
+                 </label><br><br>&nbsp;&nbsp;<input type="file" class"file" id="file3" onchange="return page3Validation('file3','size3');">
+					<p id="size3"></p></fieldset><br>
+               <fieldset><br><label>All Semester Marks&nbsp;<font color="red" size="+2">*</font>
+                 </label><br><br>&nbsp;&nbsp;<input type="file" id="file4" class"file" onchange="return page3Validation('file4','size4');">
+					<p id="size4"></p></fieldset><br>
+                    <input type="submit" value="submit" class="button">
+				</td>
+			</tr>
+		</table>
+ 
+		</form>
+		<script type="text/javascript" src="fileValidation.js"></script>	
+	</div>	
+</body>
+</html>
